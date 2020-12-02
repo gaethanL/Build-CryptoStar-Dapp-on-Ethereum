@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StarNotary DAPP</title>
+
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <h1>StarNotary Token DAPP</h1>
+
+    <hr>
+
+    <br>
+      <h1>Create a Star</h1>
+      <br><label for="starName">Star Name:</label><input type="text" id="starName"></input>
+      <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
+      <br><br><button id="createStar" onclick="App.createStar()">Create Star</button>
+      <br>
+      <hr>
+      <br>
+      <h1>transferStar</h1>
+      <br><label for="to">Send to:</label><input type="text" id="to"></input>
+      <br><label for="idS">Star ID:</label><input type="text" id="idS"></input>
+      <br><br><button id="transferStar" onclick="App.transferStar()">transferStar</button>
+      <br>
+      <hr>
+      <br>
+      <h1>Sale a Star</h1>
+      <br><label for="starPrice">Star price:</label><input type="text" id="starPrice"></input>
+      <br><label for="Id">Star ID:</label><input type="text" id="Id"></input>
+      <br><br><button id="putStarUpForSale" onclick="App.putStarUpForSale()">putStarUpForSale</button>
+      <br>
+      <hr>
+      <br>
+      <h1>Buy a Star</h1>
+      <br><label for="idStars">Star ID:</label><input type="text" id="idStars"></input>
+      <br><label for="buyPrice">buy Price:</label><input type="text" id="buyPrice"></input>
+      <br><br><button id="buyStar" onclick="App.buyStar()">buyStar</button>
+      <br>
+      <hr>
+      <br>
+      <h1>Look up a Star</h1>
+      <br><label for="lookid">Star ID:</label><input type="text" id="lookid"></input>
+      <br><br><button onclick="App.lookUp()">Look Up a Star</button>
+      <hr>
+      <br>
+      <span id="status"></span>
+      <br>
+    <script src="index.js"></script>
+  </body>
+</html>
+
